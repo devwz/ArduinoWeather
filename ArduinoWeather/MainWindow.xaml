@@ -5,8 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ArduinoWeather"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Arduino Weather" Height="450" Width="800">
+    
     <Grid>
-        
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- DTH -->
+        <Grid Grid.Row="0" Background="#B8E1FF">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" /> 
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Row="0" VerticalAlignment="Center">
+                <TextBlock FontSize="32" Text="DTH" TextAlignment="Center" Foreground="#323232" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Margin="40" VerticalAlignment="Center">
+                <WrapPanel>
+                    <TextBlock Text="Umidade: " FontSize="32" Foreground="#323232" />
+                    <TextBlock Text="0" FontSize="32" Foreground="#323232" />
+                    <TextBlock Text="%" FontSize="32" Foreground="#323232" />
+                </WrapPanel>
+                <WrapPanel>
+                    <TextBlock Text="Temperatura: " FontSize="32" Foreground="#323232" />
+                    <TextBlock Text="0" FontSize="32" Foreground="#323232" />
+                    <TextBlock Text="º C" FontSize="32" Foreground="#323232" />
+                </WrapPanel>
+            </StackPanel>
+
+        </Grid>
+
+        <!-- IoT Plant -->
+        <Grid Grid.Row="1" Background="#323232">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                <TextBlock Text="IoT Plant" FontSize="32" TextAlignment="Center" Foreground="LightGreen" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="40">
+                <WrapPanel>
+                    <TextBlock Text="Solo: " FontSize="32" Foreground="LightGreen" />
+                    <TextBlock Text="Moderado" FontSize="32" />
+                </WrapPanel>
+            </StackPanel>
+
+        </Grid>
+
     </Grid>
+    
 </Window>
