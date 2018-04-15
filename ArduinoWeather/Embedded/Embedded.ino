@@ -18,11 +18,11 @@ class Higrometro
 };
 
 
-#define DHPIN A1
+#define DHTPIN A1
 #define DHTTYPE DHT11
 
 Higrometro higrometro(A2);
-DHT dht(DHPIN, DHTTYPE);
+DHT dht(DHTPIN, DHTTYPE);
 
 // A rotina de configuração é executada uma vez quando o reset é pressionado:
 void setup()
