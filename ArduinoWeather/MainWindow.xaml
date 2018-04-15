@@ -22,7 +22,7 @@
             </Grid.ColumnDefinitions>
 
             <StackPanel Grid.Row="0" VerticalAlignment="Center">
-                <TextBlock FontSize="32" Text="DTH" TextAlignment="Center" Foreground="#323232" />
+                <TextBlock FontSize="32" Text="DHT" TextAlignment="Center" Foreground="#323232" />
             </StackPanel>
 
             <StackPanel Grid.Column="1" Margin="40" VerticalAlignment="Center">
