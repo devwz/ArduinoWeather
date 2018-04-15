@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ArduinoWeather.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,10 @@ namespace ArduinoWeather
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = platform;
         }
+
+        Platform platform = new Platform("COM3");
+
     }
 }

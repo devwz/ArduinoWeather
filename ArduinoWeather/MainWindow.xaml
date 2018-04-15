@@ -28,12 +28,12 @@
             <StackPanel Grid.Column="1" Margin="40" VerticalAlignment="Center">
                 <WrapPanel>
                     <TextBlock Text="Umidade: " FontSize="32" Foreground="#323232" />
-                    <TextBlock Text="0" FontSize="32" Foreground="#323232" />
+                    <TextBlock Text="{Binding Path=Plant.Umidade}" FontSize="32" Foreground="#323232" />
                     <TextBlock Text="%" FontSize="32" Foreground="#323232" />
                 </WrapPanel>
                 <WrapPanel>
                     <TextBlock Text="Temperatura: " FontSize="32" Foreground="#323232" />
-                    <TextBlock Text="0" FontSize="32" Foreground="#323232" />
+                    <TextBlock Text="{Binding Path=Plant.Temperatura}" FontSize="32" Foreground="#323232" />
                     <TextBlock Text="º C" FontSize="32" Foreground="#323232" />
                 </WrapPanel>
             </StackPanel>
@@ -54,7 +54,7 @@
             <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="40">
                 <WrapPanel>
                     <TextBlock Text="Solo: " FontSize="32" Foreground="LightGreen" />
-                    <TextBlock Text="Moderado" FontSize="32" />
+                    <TextBlock Text="{Binding Path=Plant.Solo}" Foreground="LightGreen" FontSize="32" />
                 </WrapPanel>
             </StackPanel>
 
